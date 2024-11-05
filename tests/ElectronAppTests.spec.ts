@@ -1,4 +1,3 @@
-// tests/ElectronAppTests.ts
 import { test, expect } from '@playwright/test';
 import ElectronAppController from '../utils/ElectronAppController';
 
@@ -13,6 +12,6 @@ test.describe('Electron app automation', () => {
 
     test('should interact with elements in the Electron app', async () => {
         await ElectronAppController.interactWithMainWindow();
-        expect(ElectronAppController.mainWindow).toBeDefined(); // Example assertion
+        expect(ElectronAppController.mainWindow).toBeDefined(); // assertion
     });
 });

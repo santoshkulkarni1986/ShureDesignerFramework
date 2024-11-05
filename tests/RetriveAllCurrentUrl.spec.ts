@@ -1,7 +1,5 @@
-// src/tests/ElectronApp.test.ts
 import { test, expect } from '@playwright/test';
-import ElectronAppController from '../utils/ElectronAppController'; // Adjust the import path as necessary
-
+import ElectronAppController from '../utils/ElectronAppController'; 
 test.describe('Electron app URL retrieval', () => {
     test.beforeAll(async () => {
         await ElectronAppController.launchApp();
@@ -16,10 +14,9 @@ test.describe('Electron app URL retrieval', () => {
         console.log("Retrieved window URLs:", urls);
         
         // You can add assertions based on expected URLs
-        expect(urls).toBeInstanceOf(Array); // Ensure it's an array
-        expect(urls.length).toBeGreaterThan(0); // Expect at least one window URL
+        expect(urls).toBeInstanceOf(Array); 
+        expect(urls.length).toBeGreaterThan(0); // Expected at least one window URL
 
-        // Log or check specific URLs if needed
-        // expect(urls).toContain('expected_url_here');
+      
     });
 });

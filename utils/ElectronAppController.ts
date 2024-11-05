@@ -1,4 +1,3 @@
-// src/ElectronAppController.ts
 import { _electron as electron, ElectronApplication, Page } from 'playwright';
 import * as path from 'path';
 import { config } from './config'; 

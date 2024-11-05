@@ -1,4 +1,3 @@
-// src/utils/ElectronAppUtils.ts
 import { Page } from 'playwright';
 
 export class ElectronAppUtils {
